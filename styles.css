@@ -4,7 +4,7 @@
     align-items: center;
 }
 main{
-    height: 84%;
+    height: calc(100% - 106px);
     overflow-x: hidden; 
 }
 .content .cartaInicio{
@@ -19,11 +19,14 @@ footer{
     height: 50px;
     width: 100%;
     background-color: black;
-    position: absolute;
+    position: sticky;
     bottom: 0;
 }
 
 /*-------------------------------- estilos lucho -----------------------------*/
+.contentLucho #cardLucho{
+    margin: 10px 0 25px 0;
+}
 
 /*-------------------------------- estilos Lean  -----------------------------*/
 
