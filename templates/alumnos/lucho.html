@@ -4,113 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body style="height: 100%">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/index.html">Proyecto</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Alumnos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="lean.html">Leandro Fernandez</a></li>
-                      <li><a class="dropdown-item" href="nahuel.html">Nahuel Gomez</a></li>
-                      <li><a class="dropdown-item" href="uri.html">Damon Uriel Ruscio</a></li>
-                      <li><a class="dropdown-item" href="ema.html">Ema</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main style="background-color: #f1f1dfd6;">
-      <div class="content contentLucho">
-        <div class="card" id="cardLucho" style="width: 18rem;">
-          <img src="/imgs/fotoLucho.jpg" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Luciano Gomez</h5>
-            <p class="card-text">Mi nombre es Luciano, vivo en Floresta, trabajo 8 horas y estudio en la IFTS nr16</p>
-            <a href="https://github.com/luchogomez01" target="_blank" class="btn btn-primary">Mi gitHub</a>
-          </div>
-        </div>
-        <div class="accordion" id="accoLucho" style="width: 100%;">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                Experiencia laboral
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accoLucho">
-              <div class="accordion-body">
+<body style="height: 100%; margin: 0;">
+    <header><h1 style="margin: 0;">Grupo 7</h1></header>
+    <nav>
+      <ul>
+        <li><a href="lean.html">Leandro Fernandez</a></li>
+        <li><a href="nahuel.html">Nahuel Gomez</a></li>
+        <li><a href="uri.html">Damon Uriel Ruscio</a></li>
+        <li><a href="emma.html">Emmanuel Muñoz</a></li>
+      </ul>
+    </nav>
+    <main>
+        <section class="alumnosSection">
+          <aside>
+            <h2 style="padding-left: 25px; text-decoration: underline;">Enlases:</h2>
+            <ul style="padding-left: 25px;">
+              <li style="margin-bottom: 10px;"><b>GITHUB:</b><a href="https://github.com/luchogomez01" target="_blank">https://github.com/luchogomez01</a></li>
+              <li><b>Linkedin:</b><a href="https://www.linkedin.com/in/luciano-gomez-525b54194/" target="_blank">Luciano Javier Gomez</a></li>
+            </ul>
+          </aside>
+          <div class="content" style="width: 100%; overflow-x: scroll;">
+            <img class="fotoSection" id="fotoLucho" src="/imgs/fotoLucho.jpg">
+              <article class="cartaAlumnos">
                 <ul>
-                  <li>
-                    <strong>Administrador en conciliaciones privadas:</strong> Administrador y asistente personal de la conciliadora laboral y mediadora privada Cristina Liliana Garmendia.      
-                  </li>
-                  <li>
-                    <strong>Analista programador Front-End:</strong> Desarrollador web del departamento Front-End en la empresa Teknos Technology Group.
-                  </li>
+                  <li><b>Edad:</b>22 años</li>
+                  <li><b>Equipo:</b>Boca Jrs</li>
+                  <li><b>Trabajo:</b> Analista programador</li>
+                  <li><b>Me gusta... </b>Ir al gym, salir con amigos, jugar a la pelota</li>
                 </ul>
-              </div>
-            </div>
+              </article>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Estudios
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accoLucho">
-              <div class="accordion-body">
-                <ul>
-                  <li>
-                    <strong>Secundario completo</strong> Colegio Schönthal
-                  </li>
-                  <li>
-                    <strong>Universidad de Buenos Aires (UBA)</strong> Comunicación social
-                  </li>
-                  <li>
-                    <strong>instituto de Formación Técnico Superior (I.F.T.S. 16):</strong> tecnicatura en análisis de sistemas.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Gustos
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accoLucho">
-              <div class="accordion-body">
-                <ul>
-                  <li>Ir al gym</li>
-                  <li>Salir con amigos</li>
-                  <li>Jugar al futbol</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        </section>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
