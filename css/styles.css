@@ -32,6 +32,9 @@ main{
     flex-direction: column;
     align-items: center;
 }
+.content .nombre{
+    text-decoration: underline;
+}
 .content .fotoSection{
     height: 307px;
     margin-top: 15px;
