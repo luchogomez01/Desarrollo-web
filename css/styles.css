@@ -1,73 +1,94 @@
-header{
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
     background-color: black;
     color: white;
     text-align: center;
 }
-nav{
+
+nav {
     background-color: lightgray;
     display: flex;
     border-bottom: 1px black solid;
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: space-around;
-    list-style:none;
+    list-style: none;
     width: 100%;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     cursor: pointer;
     color: cornflowerblue;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     padding: 0 5px 0 5px;
     border-radius: 10px;
     background-color: black;
 }
-main{
+
+main {
     height: calc(100% - 140px);
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.content .nombre{
+
+.content .nombre {
     text-decoration: underline;
 }
-.content .fotoSection{
+
+.content .fotoSection {
     height: 307px;
     margin-top: 15px;
     border: solid 1px black;
     border-radius: 200px;
 }
-.content .cartaInicio{
+
+.content .cartaInicio {
     margin: 30px 0 20px 0;
     background-color: #fbd4db6b;
     height: 300px;
     width: 350px;
     text-align: center;
-    align-content: center; 
+    align-content: center;
 }
-.content .cartaAlumnos{
+
+.content .cartaAlumnos {
     margin: 30px 0 20px 0;
     background-color: #9bb4fc6b;
     width: 350px;
     border: solid 1px black;
     text-align: center;
 }
-.alumnosSection{
+
+.alumnosSection {
     display: flex;
     flex-direction: row;
     height: 100%;
 }
-.alumnosSection aside{
+
+.alumnosSection aside {
     text-align: start;
-    align-content: center; 
+    align-content: center;
     background-color: #9bb4fc6b;
     border-right: 1px black groove;
 }
-footer{
+
+footer {
     height: 50px;
     width: 100%;
     background-color: black;
@@ -76,27 +97,19 @@ footer{
     border-top: 1px lightgray solid;
 }
 
-/*-------------------------------- estilos lucho -----------------------------*/
-#fotoLucho{
-    border: 6px #d5e0fe double;
-}
-#fotoLucho:hover {
-    filter: saturate(150%);
-    transform: scale(1.03, 1.03); }
-
-/*-------------------------------- estilos Lean  -----------------------------*/
-#fotoLeandro{
-    border-radius: 0;
+#countdown {
+    font-size: 2em;
+    margin-top: 20px;
 }
 
-/*-------------------------------- estilos Nahuel ----------------------------*/
-
-/*-------------------------------- estilos Uri -------------------------------*/
-#asideUri{
-    padding-right: 30px;
+.hidden {
+    display: none;
 }
 
-/*-------------------------------- estilos Ema -------------------------------*/
-#asideEmma{
-    padding-right: 50px;
+#quiz {
+    margin-top: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
 }
