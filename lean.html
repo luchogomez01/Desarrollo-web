@@ -27,7 +27,7 @@
           </aside>
           <div class="content" style="width: 100%; overflow-x: scroll;">
             <h1 class="nombre">Leandro Fernandez</h1>
-            <img class="fotoSection" id="fotoLeandro" src="imgs/fotoLeandro.png">
+            <img class="fotoSection" id="miImagen" src="imgs/LeanWp.jpg">
               <article class="cartaAlumnos">
                 <ul>
                   <li><b>Estudio:</b>Análisis de sistemas</li>
@@ -39,5 +39,20 @@
         </section>
     </main>
     <footer></footer>
+
+    <script>
+      const imagen = document.getElementById('miImagen');
+    
+      function mostrarImagenHover() {
+        imagen.src = 'imgs/LeanVerano.png';
+      }
+    
+      function mostrarImagenOriginal() {
+        imagen.src = 'imgs/LeanWp.jpg';
+      }
+    
+      imagen.addEventListener('mouseover', mostrarImagenHover);
+      imagen.addEventListener('mouseout', mostrarImagenOriginal);
+    </script>
 </body>
 </html>

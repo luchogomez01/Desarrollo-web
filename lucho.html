@@ -28,7 +28,7 @@
           </aside>
           <div class="content" style="width: 100%; overflow-x: scroll;">
             <h1 class="nombre">Luciano Gomez</h1>
-            <img class="fotoSection" id="fotoLucho" src="imgs/fotoLucho.jpg">
+            <img class="fotoSection" id="miImagen" src="imgs/fotoLucho.jpg">
               <article class="cartaAlumnos">
                 <ul>
                   <li><b>Edad:</b>22 años</li>
@@ -41,5 +41,20 @@
         </section>
     </main>
     <footer></footer>
+
+    <script>
+      const imagen = document.getElementById('miImagen');
+    
+      function mostrarImagenHover() {
+        imagen.src = 'imgs/luchoUno.jpg';
+      }
+    
+      function mostrarImagenOriginal() {
+        imagen.src = 'imgs/fotoLucho.jpg';
+      }
+    
+      imagen.addEventListener('mouseover', mostrarImagenHover);
+      imagen.addEventListener('mouseout', mostrarImagenOriginal);
+    </script>
 </body>
 </html>
