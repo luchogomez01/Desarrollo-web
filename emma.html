@@ -5,38 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function changeImage(element, newSrc) {
+            element.src = newSrc;
+        }
+
+        function revertImage(element, originalSrc) {
+            element.src = originalSrc;
+        }
+    </script>
 </head>
 <body style="height: 100%; margin: 0;">
     <header><h1 style="margin: 0;">Grupo 7</h1></header>
     <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="lucho.html">Luciano Gomez</a></li>
-        <li><a href="lean.html">Leandro Fernandez</a></li>
-        <li><a href="nahuel.html">Nahuel Gomez</a></li>
-        <li><a href="uri.html">Damon Uriel Ruscio</a></li>
-      </ul>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="lucho.html">Luciano Gomez</a></li>
+            <li><a href="lean.html">Leandro Fernandez</a></li>
+            <li><a href="nahuel.html">Nahuel Gomez</a></li>
+            <li><a href="uri.html">Damon Uriel Ruscio</a></li>
+        </ul>
     </nav>
     <main>
         <section class="alumnosSection">
-          <aside id="asideEmma">
-            <h2 style="padding-left: 25px; text-decoration: underline;">Enlaces:</h2>
-            <ul style="padding-left: 25px;">
-              <li><a href="https://maps.app.goo.gl/3mci2GmCENba8Smh7" target="_blank">Facultad</a></li>
-              <li><a href="https://github.com/emma43435" target="_blank">Github</a></li>
-            </ul>
-          </aside>
-          <div class="content" style="width: 100%; overflow-x: scroll;">
-            <h1 class="nombre">Emmanuel Muñoz</h1>
-            <img class="fotoSection" src="imgs/fotoEmma.jpg">
-              <article class="cartaAlumnos">
-                <ul>
-                  <li>Tengo 37 años</li>
-                  <li>actualmente me desempeño como Analista funcional.</li>
-                  <li>Vivo en Capital Federal</li>
+            <aside id="asideEmma">
+                <h2 style="padding-left: 25px; text-decoration: underline;">Enlaces:</h2>
+                <ul style="padding-left: 25px;">
+                    <li><a href="https://maps.app.goo.gl/3mci2GmCENba8Smh7" target="_blank">Facultad</a></li>
+                    <li><a href="https://github.com/emma43435" target="_blank">Github</a></li>
                 </ul>
-              </article>
-          </div>
+            </aside>
+            <div class="content" style="width: 100%; overflow-x: scroll;">
+                <h1 class="nombre">Emmanuel Muñoz</h1>
+                <img class="fotoSection" src="imgs/fotoEmma.jpg"
+                     onmouseover="changeImage(this, 'imgs/fotoemma2.jpg')"
+                     onmouseout="revertImage(this, 'imgs/fotoEmma.jpg')" 
+                     alt="Foto de Emmanuel Muñoz">
+                <article class="cartaAlumnos">
+                    <ul>
+                        <li><b>Trabajo:</b> Analista funcional</li>
+                        <li><b>Estudios:</b> Instituto de formación técnica superior Nº16</li>
+                        <li><b>Residencia:</b> Ciudad de Buenos Aires</li>
+                        <li><b>Hobbies:</b> Mirar películas, viajar, pasear, juntarse con amigos</li>
+                        <li><b>Equipo de fútbol:</b> Boca Juniors</li>
+                    </ul>
+                </article>
+            </div>
         </section>
     </main>
     <footer></footer>
