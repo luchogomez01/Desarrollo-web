@@ -29,7 +29,7 @@
           </aside>
           <div class="content" style="width: 100%; overflow-x: scroll;">
             <h1 class="nombre">Damon Uriel Ruscio</h1>
-            <img class="fotoSection" src="imgs/fotoUriel.jpeg">
+            <img class="fotoSection" id="miImagen" src="imgs/fotoUriel.jpg">
               <article class="cartaAlumnos">
                 <ul>
                   <li><strong>Colegio Escuela De Comercio 11, Dr. Jose Peralta:</strong> Secundario completo.</li>
@@ -41,5 +41,18 @@
         </section>
     </main>
     <footer></footer>
-</body>
+    <script>
+     const imagen = document.getElementById('miImagen');
+    
+    function mostrarImagenHover() {
+      imagen.src = 'imgs/fotoUrieldos.jpg';
+    }
+  
+    function mostrarImagenOriginal() {
+      imagen.src = 'imgs/fotoUriel.jpg';
+    }
+      imagen.addEventListener('mouseover', mostrarImagenHover);
+      imagen.addEventListener('mouseout', mostrarImagenOriginal);
+    </script>
+  </body>
 </html>
