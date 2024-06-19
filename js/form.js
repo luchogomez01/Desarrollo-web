@@ -63,11 +63,5 @@ function calculateScore() {
     };
 
     alert(message);
-<<<<<<< HEAD:js/script.js
-}
-
-
-=======
     window.location.href = 'index.html';
 };
->>>>>>> f22538d19da7e665ed751b13da8d1b5082c87aa2:js/form.js
